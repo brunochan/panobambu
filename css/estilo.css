@@ -212,6 +212,23 @@ header {
     padding: 1em;
 }
 
+/* Footer */
+footer {
+    background: #555;
+    color: #f0f0f0;
+    padding: 10px 0;
+}
+
+address {
+    padding: 0 10px;
+}
+
+footer p {
+    font-size: .75em;
+    text-align: center;
+    padding-top: 15px;
+}
+
 
 @media (max-width: 600px) {
     .barra-nav {
@@ -252,22 +269,6 @@ header {
 
         background: rgba(0, 0, 0, 0.4);
     }
-}
-
-/* Footer */
-footer {
-    background: #555;
-    color: #f0f0f0;
-    padding: 10px 0;
-}
-
-address {
-    padding: 0 10px;
-}
-
-footer p {
-    text-align: center;
-    padding-top: 15px;
 }
 
 @media not all and (max-width: 600px) {
