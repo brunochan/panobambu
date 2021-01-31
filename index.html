@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="pt-br">
+
+	<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/animation-fix.js"></script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>pano-bambu</title>
+
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+		<div class="container">
+
+			<button class="menu-abrir">Abre Menu</button>
+
+			<h1 class="logo">
+				<img src="img/logo.svg" alt="logo pano bambu">
+			</h1>
+
+			<nav class="barra-nav">
+
+				<button class="menu-fechar">Fecha Menu</button>
+
+				<ul class="menu-principal">
+					<li><a href="#sobre" >Sobre</a></li>
+					<li><a href="esportes.html" class="dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produtos</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Uso pessoal</a></li>
+							<li><a class="dropdown-item" href="#">Cozinha</a></li>
+						</ul></li>
+					<li><a href="#footer">Contato</a></li>
+				</ul>
+
+				<form class="busca">
+					<input type="search" id="campo-busca">
+					<button type="submit">Buscar</button>
+				</form>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="container destaques">
+			<div class="row">
+				<div class="panel-group" id="paineis-destaques">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-example-generic3" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-generic3" data-slide-to="1"></li>                                            
+								</ol>                                
+
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner"  role="listbox">
+									<figure class="item active">
+										<a href="#">
+											<img src="img/promocao.jpg" class="fotos-destaque" alt="Foto promocao">
+										</a>	
+									</figure>
+
+									<figure class="item">
+										<a href="#">
+											<img src="img/slogan.jpg" class="fotos-destaque" alt="Foto slogan">
+										</a>	
+									</figure>									                                                                                  
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</section>
+
+		<section class=" container novidades">
+			<h1>Fique por dentro</h1>			
+
+			<div class="row">
+				<div class="quadros-novidades col-sm-6 col-md-4 col-lg-3">
+					<div class="thumbnail">
+						<a href="https://www.instagram.com/banhodeervasautocuidado/">
+							<img src="img/parceria.JPG" alt="Logo banho de ervas">
+							<figcaption class="caption">
+								<h2 class="tituloItensNovidades">A mais nova parceira</h2>
+							</figcaption>
+						</a>		
+					</div>
+				</div>	
+	
+				<div class="quadros-novidades col-sm-6 col-md-4 col-lg-3">
+					<figure class="thumbnail">
+						<a href="#">
+							<img src="img/maisVendidos.JPG" alt="Foto produtos mais vendidos">
+							<figcaption class="caption">
+								<h2 class="tituloItensNovidades">Produtos de sucesso</h2>
+							</figcaption>
+						</a>			
+					</figure>
+				</div>
+			</div>	
+		</section>
+
+		<section class="container sobre" id="sobre">
+
+			<div class="row">
+				<img class="img-responsive foto-perfil col-sm-6" src="img/foto-perfil.jpg" alt="foto cristiane">
+	
+				<div class="panel-group col-sm-6" id="paineis-sobre">
+					<div class="panel panel-default">
+						<div class="panel-heading" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">
+							<h3 class="panel-title">Em 01 de setembro de 2019 nascia a panobambu.</h3>
+						</div>
+	
+						<div class="collapse in" id="primeiro-paragrafo">
+							<div class="panel-body">
+								Foi a materialização do estilo de vida adotado por Cristiane Macedo Palazzo
+								em produzir menos lixo e provar que atitudes individuais somadas constroem um mundo mais sustentável. O primeiro passo foi
+								substituir o copo descartável do seu dia-a-dia, carregando sempre um copo retrátil e reutilizável na bolsa. 
+							</div>
+						</div>
+					</div>
+	
+					<div class="panel panel-default">
+						<div class="panel-heading" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">
+							<h3 class="panel-title">Seu primeiro produto de fabricação própria não demorou a surgir.</h3>
+						</div>
+	
+						<div id="segundo-paragrafo" class="collapse">
+							<div class="panel-body">
+								Logo o estilo de vida sustentável que a Cristiane adotou foi tomando proporções maiores. Depois de muitas pesquisas
+								e testes, foi criado o primeiro produto de fabricação própria da panobambu, o pano encerado, para substituir o plástico
+								filme utilizado para cobrir e embalar alimentos.
+							</div>
+						</div>
+					</div>
+	
+					<div class="panel panel-default">
+						<div class="panel-heading" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">
+							<h3 class="panel-title">A Missão da panobambu.</h3>
+						</div>
+	
+						<div id="terceiro-paragrafo" class="collapse">
+							<div class="panel-body">
+								A missão da panobambu é lutar por um mundo mais consciente e sustentável.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer id="footer">
+		<address>
+		<strong>Panobambu</strong><br>
+    	Foz do Iguaçu - PR<br>    	   	   	
+		</address>
+
+		<address>
+			Tel: (45) 98840-4027<br>
+			Email: panobambu@gmail.com
+		</address>
+
+		<p>Todos os diretos reservadors &copy;</p>
+	</footer>
+
+	<script src="js/menu.js"></script>
+</body>

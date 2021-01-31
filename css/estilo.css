@@ -1,0 +1,311 @@
+/* reset */
+*,
+*:after,
+*:before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+body {
+	font-family: Arial, helvetica, sans-serif;
+	line-height: 1.4;
+}
+
+header {
+	background: #74f1e0;
+	width: 100%;
+}
+
+/* estilização */
+header {
+    padding: 0.5em 0;
+    height: 20vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo,
+.busca,
+.barra-nav,
+.menu-principal {
+    display: inline;
+    vertical-align: top;
+}
+
+.menu-principal {
+	list-style-type: none;
+	}
+	.menu-principal a {
+		display: block;
+		padding-right: 1em;
+		margin-right: 1em;
+
+		line-height: 1;
+		text-decoration: none;
+        text-transform: lowercase;
+        color: #333333;
+	}
+		.menu-principal a:hover {
+			opacity: 0.8;
+		}
+
+.menu-principal li {
+    float: left;
+}
+
+.navbar-expand{
+    -sm|-md|-lg|-xl|-xxl
+}
+
+.menu-abrir,
+.menu-fechar {
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    font-size: 1.6em;
+    text-indent: -999em;
+}
+
+.menu-abrir {
+    height: 0;
+    width: .75em;
+    padding-top: .125em;
+    border-top: .375em double #000;
+    border-bottom: .125em solid #000;
+
+    vertical-align: middle;
+    margin: 0.5em;
+}
+
+.menu-fechar {
+    position: relative;
+    height: 1em;
+    width: 1em;
+    margin-bottom: .7em;
+}
+
+.menu-fechar:before {
+    content: '\00D7';
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 0;
+}
+
+.barra-nav {
+    margin: 0.4em 0;
+}
+
+.logo img {
+    width: 200px; 
+    height: 20vh;
+    position: relative;
+    top: -15%;
+}
+
+/* busca */
+.busca {
+	overflow: hidden; /* clearfix */
+}
+	.busca input {
+		border: 1px solid #CCC;
+		border-bottom-color: #aaa;
+		border-right-width: 0;
+		border-radius: 5px 0 0 5px;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+		color: #555;
+		
+		height: 1.7em;
+		padding: 0 0.16em;
+
+		float: left;
+		-webkit-appearance: none;
+	}
+	.busca button {
+		background: #f0f0f0;
+		background: linear-gradient(white, white 50%, #eee);
+
+		border: 1px solid #CCC;
+		border-bottom-color: #aaa;
+		border-radius: 0 5px 5px 0;
+		color: #777;
+		font-size: 90%;
+
+		line-height: 1.667em;
+		height: 1.888888889em;
+		padding: 0 0.5em;
+		text-align: center;
+		text-transform: lowercase;
+
+		float: left;
+	}
+		.busca button:hover {
+			color: #0669de;
+        }
+        
+/* categorias */
+.sobre,
+.produtos,
+.contato {
+	color: #333333;
+}
+
+/* destaques */
+.panel-group {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.carousel-inner {
+    height: 60%;
+    width: 100vw;
+}
+
+.panel-body img {
+    height: 60vh;
+}
+
+/* Novidades */
+.novidades {
+    background: rgb(233, 232, 232);
+    padding-bottom: 20px;
+}
+
+.novidades h1 {    
+    display: block;
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    font-size: 2em;
+    margin: 3em 0 1.5em 0;
+}
+
+.tituloItensNovidades {
+    font-size: 1.5em;
+    color: #333333;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.thumbnail {
+    margin: 0 10px;
+}
+
+/* Sobre */
+.sobre {
+    margin: 3em 10px;
+}
+
+.foto-perfil {
+    margin-bottom: 1em;
+}
+
+.sobre .panel-body {
+    padding: 1em;
+}
+
+
+@media (max-width: 600px) {
+    .barra-nav {
+        background: #f0f0f0;
+        padding: 1em;
+        margin: 0;
+
+        height: 100%;
+        width: 90%;
+        max-width: 320px;
+
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -90%;
+
+        transition: left 0.3s ease-out;
+    }
+
+    .menu-ativo .barra-nav {
+        left: 0;
+    }
+
+    .menu-principal li {
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    .menu-ativo:after {
+        content: "";
+        display: block;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Footer */
+footer {
+    background: #555;
+    color: #f0f0f0;
+    padding: 10px 0;
+}
+
+address {
+    padding: 0 10px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 15px;
+}
+
+@media not all and (max-width: 600px) {
+    .menu-abrir,
+    .menu-fechar {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 1.125em;
+    }
+    header {
+        padding-left: 0.5em;
+    }
+    .logo,
+    .busca,
+    .barra-nav,
+    .menu-principal {
+        display: -webkit-inline-box;
+        vertical-align: middle;
+    }
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 1.25em;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .barra-nav {
+        display: flex;
+        align-items: center;
+    }
+    .destaques {
+        display: flex;
+        justify-content: center;
+    }
+}
