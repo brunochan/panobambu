@@ -15,8 +15,7 @@ body {
 }
 
 header {
-	background: #74f1e0;
-	width: 100%;
+	background:#119c9f; /*#119c9f*/
 }
 
 /* estilização */
@@ -165,27 +164,19 @@ header {
     padding-left: 0;
 }
 
-.carousel-inner {
-    height: 60%;
-    width: 100vw;
-}
-
-.panel-body img {
-    height: 60vh;
-}
-
 /* Novidades */
 .novidades {
     background: rgb(233, 232, 232);
     padding-bottom: 20px;
 }
 
-.novidades h1 {    
-    display: block;
+.novidades h1 { 
     font-family: 'Lobster Two', cursive;
     text-align: center;
     font-size: 2em;
-    margin: 3em 0 1.5em 0;
+    padding: 30px 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .tituloItensNovidades {
@@ -201,7 +192,7 @@ header {
 
 /* Sobre */
 .sobre {
-    margin: 3em 10px;
+    padding: 30px 0;
 }
 
 .foto-perfil {
@@ -282,6 +273,9 @@ footer p {
     html {
         font-size: 1.125em;
     }
+    .container {
+        height: 90vh;
+    }
     header {
         padding-left: 0.5em;
     }
@@ -298,8 +292,9 @@ footer p {
         font-size: 1.25em;
     }
     .container {
+        height: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .barra-nav {
         display: flex;
@@ -308,5 +303,9 @@ footer p {
     .destaques {
         display: flex;
         justify-content: center;
+    }
+    .novidades {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
