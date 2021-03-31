@@ -1,0 +1,32 @@
+.rodape {
+    background: rgb(51, 51, 51);
+    color: #f0f0f0;
+    padding: 2rem;
+}
+
+.rodape a {
+    color: #FFF;
+    font-size: 3rem;
+    position: absolute;
+    right: 2rem;
+}
+
+.rodape a:first-child {
+    right: 7rem;
+}
+
+.rodape a:hover {
+    color: #FFF;
+}
+
+.copyright {
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+    .rodape {
+        display: inline-block;
+        width: 100%;
+    }
+}

@@ -3,7 +3,6 @@
 
 	<script src="bootstrap/js/jquery.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<script src="bootstrap/js/animation-fix.js"></script>
 
 <head>
 	<meta charset="UTF-8">
@@ -11,13 +10,19 @@
 
 	<title>pano-bambu</title>
 
-	<link rel="stylesheet" href="css/estilo.css">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/9562c886e8.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/cabecalho.css">
+	<link rel="stylesheet" href="css/destaques.css">
+	<link rel="stylesheet" href="css/novidades.css">
+	<link rel="stylesheet" href="css/sobre.css">
+	<link rel="stylesheet" href="css/rodape.css">
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
 		<div class="container">
 
 			<button class="menu-abrir">Abre Menu</button>
@@ -33,7 +38,7 @@
 				<ul class="menu-principal">
 					<li><a href="#sobre">Sobre</a></li>
 					<li><a href="#novidades">Produtos</a></li>
-					<li><a href="#footer">Contato</a></li>
+					<li><a href="#rodape">Contato</a></li>
 				</ul>
 
 				<form class="busca">
@@ -86,15 +91,13 @@
                 <h3 class="destaques__titulo">Você gosta de café?</h3>
             </div>
                         
-        </section>
-
-		
+        </section>	
 
 		<section class=" container novidades" id="novidades">
 			<h1>Fique por dentro</h1>			
 
 			<div class="row">
-				<div class="quadros-novidades col-sm-6 col-md-4 col-lg-3">
+				<div class="novidades__quadros col-sm-6 col-md-4 col-lg-3">
 					<div class="thumbnail">
 						<a href="https://www.instagram.com/banhodeervasautocuidado/">
 							<img src="img/parceria.JPG" alt="Logo banho de ervas">
@@ -105,7 +108,7 @@
 					</div>
 				</div>	
 	
-				<div class="quadros-novidades col-sm-6 col-md-4 col-lg-3">
+				<div class="novidades__quadros col-sm-6 col-md-4 col-lg-3">
 					<figure class="thumbnail">
 						<a href="https://www.instagram.com/panobambu/">
 							<img src="img/maisVendidos.JPG" alt="Foto produtos mais vendidos">
@@ -118,11 +121,11 @@
 			</div>	
 		</section>
 
-		<section class="container sobre" id="sobre">
+		<section class="sobre container" id="sobre">
 			<h1>Sobre</h1>
 
 			<div class="row">
-				<img class="img-responsive foto-perfil col-sm-6" src="img/foto-perfil.jpg" alt="foto cristiane">
+				<img class="sobre__foto img-responsive col-sm-6" src="img/foto-perfil.jpg" alt="foto cristiane">
 	
 				<div class="panel-group col-sm-6" id="paineis-sobre">
 					<div class="panel panel-default">
@@ -169,10 +172,18 @@
 		</section>
 	</main>
 
-	<footer class="footer" id="footer">
+	<footer class="rodape" id="rodape">
+		<a target="_blank" href="https://www.facebook.com/panobambuloja">
+			<i class="fab fa-facebook-f" aria-hidden="true"></i>
+		</a>
+
+		<a target="_blank" href="https://www.instagram.com/panobambu/">
+			<i class="fab fa-instagram" aria-hidden="true"></i>
+		</a>
+
 		<address>
-		<strong>Panobambu</strong><br>
-    	Foz do Iguaçu - PR<br>    	   	   	
+			<strong>Panobambu</strong><br>
+			Foz do Iguaçu - PR<br>    	   	   	
 		</address>
 
 		<address>
@@ -180,7 +191,7 @@
 			Email: panobambu@gmail.com
 		</address>
 
-		<p>&copy; Copyright 2021 - Todos os direitos reservados</p>
+		<p class="copyright">&copy; Copyright 2021 - Todos os direitos reservados</p>
 	</footer>
 
 	<script src="js/menu.js"></script>

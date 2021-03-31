@@ -1,0 +1,201 @@
+header {
+    background:rgb(247, 245, 245);
+    height: 20vh;
+    padding: 0.5em 0;
+}
+
+.logo,
+.busca,
+.barra-nav,
+.menu-principal {
+    display: inline;
+    vertical-align: top;
+}
+
+.menu-principal {
+	list-style-type: none;
+}
+
+.menu-principal a {
+    color: #333333;
+	display: block;
+	margin-right: 1em;
+	line-height: 1;
+	padding-right: 1em;
+	text-decoration: none;
+    text-transform: lowercase;
+	}
+
+.menu-principal a:hover {
+	opacity: 0.8;
+}
+
+.menu-principal li {
+    float: left;
+}
+
+.navbar-expand{
+    -sm|-md|-lg|-xl|-xxl
+}
+
+.menu-abrir,
+.menu-fechar {
+    background: none;
+    border: 0;
+    font-size: 1.6em;
+    outline: 0;
+    text-indent: -999em;
+    -webkit-appearance: none;
+}
+
+.menu-abrir {
+    border-bottom: .125em solid #000;
+    border-top: .375em double #000;
+    height: 0;
+    margin: 0.5em;
+    padding-top: .125em;    
+    vertical-align: middle;
+    width: .75em;
+}
+
+.menu-fechar {
+    height: 1em;
+    margin-bottom: .7em;
+    position: relative;
+    width: 1em;
+}
+
+.menu-fechar:before {
+    content: '\00D7';
+    left: 0;
+    position: absolute;
+    text-indent: 0;
+    top: 0;
+}
+
+.barra-nav {
+    display: inline-block;
+    margin: 0.4em 0;
+}
+
+.logo img {
+    height: 20vh;
+    position: relative;
+    top: -15%;
+    width: 200px; 
+}
+
+/* busca */
+.busca {
+	overflow: hidden; /* clearfix */
+}
+
+.busca input {
+	border: 1px solid #CCC;
+	border-bottom-color: #aaa;
+	border-right-width: 0;
+	border-radius: 5px 0 0 5px;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+	color: #555;
+		
+	height: 1.7em;
+	padding: 0 0.16em;
+
+	float: left;
+	-webkit-appearance: none;
+}
+
+.busca button {
+	background: #f0f0f0;
+	background: linear-gradient(white, white 50%, #eee);
+
+	border: 1px solid #CCC;
+	border-bottom-color: #aaa;
+	border-radius: 0 5px 5px 0;
+	color: #777;
+	font-size: 90%;
+	
+    float: left;
+
+	line-height: 1.667em;
+	height: 1.888888889em;
+	padding: 0 0.5em;
+	text-align: center;
+	text-transform: lowercase;
+}
+
+.busca button:hover {
+	color: #0669de;
+}
+        
+/* categorias */
+.sobre,
+.produtos,
+.contato {
+	color: #333333;
+}
+
+@media (max-width: 600px) {
+    .barra-nav {
+        background: #f0f0f0;
+        padding: 1em;
+        margin: 0;
+
+        height: 100%;
+        width: 90%;
+        max-width: 320px;
+
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -90%;
+
+        transition: left 0.3s ease-out;
+    }
+
+    .menu-ativo .barra-nav {
+        left: 0;
+    }
+
+    .menu-principal li {
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    .menu-ativo:after {
+        content: "";
+        display: block;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media not all and (max-width: 600px) {
+    .menu-abrir,
+    .menu-fechar {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+	.logo,
+    .busca,
+    .barra-nav,
+    .menu-principal {
+        display: -webkit-inline-box;
+        vertical-align: middle;
+    }
+}
+
+@media (min-width: 1000px) {    
+    .barra-nav {
+        display: flex;
+        align-items: center;
+    }
+}

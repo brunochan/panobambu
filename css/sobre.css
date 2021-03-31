@@ -1,0 +1,18 @@
+.sobre {
+    display: inline-block;
+    padding: 30px 3rem;
+}
+
+.sobre__foto {
+    margin-bottom: 1em;
+}
+
+.sobre .panel-body {
+    padding: 1em;
+}
+
+@media (min-width: 1000px) {
+    .sobre {
+        display: block;
+    }
+}

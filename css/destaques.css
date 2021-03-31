@@ -1,0 +1,89 @@
+.panel-group {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.caixa {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;  
+}
+
+.destaques {
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+
+.destaques__titulo {
+    background: rgba(0, 0, 0, .5);
+    color: #fdfdfd;
+    font-size: 1.2em;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.destaques__principal {
+    background: center / cover no-repeat;
+    grid-row: 1 / 3;
+}
+
+.destaques__secundario:nth-child(2) {
+    background: url('../img/sabonete.jpg') center / cover no-repeat;
+}
+
+.destaques__secundario:nth-child(3) {
+    background: url('../img/coador.jpg') center / cover no-repeat;
+}
+
+@media screen and (min-width: 0) {
+    .destaques {
+        display: contents;
+        height: auto;
+    }
+    .destaques__principal, .destaques__categorias {
+        grid-column: 1 / 2;
+    }
+    .destaques__secundario:nth-child(2) {
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+    .destaques__secundario:nth-child(3) {
+        display: none;
+        grid-column: none;
+        grid-row: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .destaques {
+        display: grid;
+    }
+    .destaques__principal {
+        grid-column: 1 / 2;
+    }
+    .destaques__secundario:nth-child(2) {
+        display: flex;
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+    }
+    .destaques__secundario:nth-child(3) {
+        display: flex;
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+    }
+}
+
+@media (min-width: 1000px) {
+    .destaques {
+        display: grid;
+        justify-content: center;
+    }
+}
