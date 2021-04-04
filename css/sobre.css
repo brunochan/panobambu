@@ -3,6 +3,17 @@
     padding: 30px 3rem;
 }
 
+.sobre h1 {
+    border-bottom: 1px solid rgba(51, 51, 51, .2);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 4rem;    
+    padding-bottom: 30px;
+    text-align: center;
+}
+
 .sobre__foto {
     margin-bottom: 1em;
 }
@@ -11,8 +22,16 @@
     padding: 1em;
 }
 
+.panel-title:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 1000px) {
     .sobre {
         display: block;
+    }
+    .sobre h1 {
+        margin-left: 35rem;
+        margin-right: 35rem;
     }
 }

@@ -17,7 +17,7 @@
     grid-template-columns: 70% 30%;
     grid-template-rows: 50% 50%;
     padding-top: 20px;
-    padding-bottom: 20px;   
+    padding-bottom: 20px;     
 }
 
 .destaques__titulo {
@@ -85,5 +85,6 @@
     .destaques {
         display: grid;
         justify-content: center;
+        width: 55%;
     }
 }
